@@ -1,0 +1,204 @@
+﻿@model List<Slider>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+        <section class="sec-2 mt-5 pt-5 mb-5 pb-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 align-items-center">
+                    <div class="col">
+                        <h2>Let us create...</h2>
+                        <p>You may contribute a small amount via PayPal if Nomad Force Template is useful for you. This
+                            will absolutely help us to keep creating better CSS templates for you.</p>
+                        <p>We provide you 100% free templates on TemplateMo website. Images are provided by FreePik and
+                            Unsplash websites.</p>
+                    </div>
+                    <div class="col">
+                        <p>This Bootstrap 5 layout is free to use for your business. You are allowed to edit it in any
+                            way you like. However, please do not redistribute this template ZIP file for a template
+                            download purpose on any other website such as Free CSS collections.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-3 mt-5 pt-5 mb-5 pb-5">
+            <div class="row w-100">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img src="~/assets/image/sec-3.jpg" class="w-100 h-100" alt="">
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 bg-dark text-white p-5">
+                    <h2>We're - idealists and strategic thinkers.</h2>
+                    <p>Over six years in the video business</p>
+                    <small>Read News & Events</small> <br>
+                    <small>Work with Us</small>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide h-100" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="~/assets/image/slider-1.jpg" class="d-block w-100 h-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block bg-primary">
+                                    <h5>Morgan S.</h5>
+                                    <p>CEO & Investor</p>
+                                </div>
+                            </div>
+                            @foreach (var item in Model)
+                        {
+                             <div class="carousel-item" data-bs-interval="2000">
+                                <img src="~/assets/image/@item.Image" class="d-block w-100 h-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block bg-success">
+                                    <h5>@item.FullName</h5>
+                                    <p>@item.Profession</p>
+                                </div>
+                            </div>
+                        }
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio mt-5 pt-5 mb-5 pb-5">
+            <div class="container">
+                <h2 class="text-center">Portfolio</h2>
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                        <div class="img-content">
+                            <img src="~/assets/image/portfolio1.jpeg" class="w-100" alt="">
+                            <h3>Effortless</h3>
+                            <p class="text-danger">Branding</p>
+                        </div>
+                        <div class="img-content">
+                            <img src="~/assets/image/portfolio2.jpeg" class="w-100" alt="">
+                            <h3>Health technology</h3>
+                            <p class="text-success">Art Direction</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-content">
+                            <img src="~/assets/image/portfolio3.jpeg" class="w-100" alt="">
+                            <h3>Maki</h3>
+                            <p class="text-warning">Website</p>
+                        </div>
+                        <div class="img-content">
+                            <img src="~/assets/image/portfolio4.jpeg" class="w-100" alt="">
+                            <h3>The gig economy</h3>
+                            <p class="text-info">Graphic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news mt-5 pt-5 pb-5 mb-5">
+            <div class="container">
+                <h2 class="text-center">News & Events</h2>
+
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                    <div class="col">
+                        <img src="~/assets/image/news1.jpg" class="w-100" alt="">
+                        <h3 class="pt-3 px-3">The rise of the gig economy spells the end for these workers the old
+                            system</h3>
+                        <small class="pt-3 px-3">22 hours ago</small>
+                    </div>
+                    <div class="col">
+                        <div class="news-content d-flex mb-3">
+                            <img src="~/assets/image/news2.jpg" class="w-50" alt="">
+                            <div class="news-txt px-3">
+                                <h3>Job Opportunities: Digital, Marketing</h3>
+                                <p> Alaska, August 6, 2021</p>
+                            </div>
+                        </div>
+                        <div class="news-content d-flex">
+                            <img src="~/assets/image/news3.jpg" class="w-50" alt="">
+                            <div class="news-txt px-3">
+                                <h3>What happened to new viral video?</h3>
+                                <p>6 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formm mt-5 pt-5 mb-5 pb-5">
+            <h2 class="text-center">Dont' be shy, write to us</h2>
+            <div class="container d-flex justify-content-center">
+                <form class="col-lg-6 ">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <label class="form-label" for="form3Example1">Name</label>
+                                <input type="text" id="form3Example1" class="form-control" placeholder="Full Name" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <label class="form-label" for="form3Example3">Email</label>
+                                <input type="email" id="form3Example3" class="form-control"
+                                    placeholder="Email address" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">How can we help?</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"
+                            placeholder="Tell us about the project"></textarea>
+                    </div>
+
+
+
+                    <!-- Checkbox -->
+                    <div class="d-flex justify-content-between">
+                        <div class="form-check d-flex mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" />
+                            <label class="form-check-label" for="form2Example33">
+                                Branding
+                            </label>
+                        </div>
+                        <div class="form-check d-flex mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" />
+                            <label class="form-check-label" for="form2Example33">
+                                Digital Experiences
+                            </label>
+                        </div>
+                        <div class="form-check d-flex mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" />
+                            <label class="form-check-label" for="form2Example33">
+                                Web Development
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark btn-block mb-4 ">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7483175230427!2d49.813257114893!3d40.37010466639867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc397d94dc3%3A0x617bc46b47244c00!2sAzerbaijan%20Technical%20University!5e0!3m2!1sen!2s!4v1656232566900!5m2!1sen!2s"
+                class="w-100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../image/sec-3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+header h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+}
+header p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+header p span{
+    border-bottom: 2px solid #fff;
+    font-weight: 700;
+}
+.sticky {
+    position: fixed !important;
+    top: 0 !important ;
+    width: 100%;
+}
+
+#navbar {
+    overflow: hidden !important;
+    box-shadow: -5px 0 40px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+.navbar-brand{
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #ffc107 !important;
+}
+.nav-link{
+    font-size: 1.3rem !important;
+    font-family: sans-serif !important;
+    font-weight: 700;
+}
+.sec-2 .col h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+}
+.sec-2 .col p{
+    font-size: 1.3rem;
+    color: #717275;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.sec-3 h2{
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+}
+.sec-3 p{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.sec-3 small{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.portfolio h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #000;
+}
+.portfolio h3{
+    color: #000;
+    font-weight: 700;
+    padding: 15px 0 3px 10px;
+}
+.portfolio p{
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.news h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #000;
+}
+.formm h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #000;
+}
+form button{
+    border-radius: 30px !important;
+    padding: 10px 30px !important;
+}
+.icons i{
+    font-size: 25px;
+}
